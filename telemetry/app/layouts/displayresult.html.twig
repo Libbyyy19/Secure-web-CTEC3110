@@ -1,0 +1,28 @@
+{% extends 'banner.html.twig' %}
+{% block content %}
+
+    <h2>Telemetry Data</h2>
+
+    <table border="1">
+        <thead>
+        <tr>
+            <th>Source MSISDN</th>
+            <th>Destination</th>
+            <th>Date</th>
+            <th>Message</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for message_data in telemetry_db %}
+        <tr>
+            <th>{{ message_data.msisdn }}</th>
+            <th> {{ message_data.destination }}</th>
+            <th> {{ message_data.date }}</th>
+            <th> {{ message_data.message }}</th>
+        </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <br />
+
+{% endblock %}

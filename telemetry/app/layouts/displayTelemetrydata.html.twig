@@ -1,0 +1,21 @@
+{% extends 'banner.html.twig' %}
+{% block content %}
+
+    <h2>Telemetry Data</h2>
+
+    <div class="table-responsive-sm table-hover">
+    <table class="table">
+
+        <tr><td><b>Switch 1:</b></td><td>{{ switch1}}</td></tr>
+        <tr><td><b>Switch 2:</b></td><td>{{ switch2 }}</td></tr>
+        <tr><td><b>Switch 3:</b></td><td>{{ switch3 }}</td></tr>
+        <tr><td><b>Switch 4:</b></td><td>{{ switch4 }}</td></tr>
+        <tr><td><b>Fan:</b></td><td>{{ fan }}</td></tr>
+        <tr><td><b>heater:</b></td><td>{{ heater }}</td></tr>
+        <tr><td><b>keypad:</b></td><td>{{ keypad }}</td></tr>
+
+    </table>
+    </div>
+
+
+{% endblock %}

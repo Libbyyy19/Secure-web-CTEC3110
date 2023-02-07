@@ -1,0 +1,18 @@
+{% extends 'layout.html.twig' %}
+{% block title %} {{ page_title }} {% endblock %}
+{% block banner %}
+    <div id="banner-div">
+        <h1> Telemetry </h1>
+        <p class="cent">
+            Page last updated on <script type="text/javascript">document.write(document.lastModified)</script>
+            <br />
+            Maintained by P2610018@my365.dmu.ac.uk
+        </p>
+        <p>
+        <a href=" {{ landing_page }}"> Home Page </a>
+        </p>
+        <a href=" {{ login_page }}"> Login </a> or <a href=" {{ register_page }}"> Register </a>
+        <hr class="deepline"/>
+    </div>
+<div id="clear-div"></div>
+{% endblock %}

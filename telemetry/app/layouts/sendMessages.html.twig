@@ -1,0 +1,18 @@
+{% extends 'banner.html.twig' %}
+{% block content %}
+    <div id="send-message">
+    <form method="{{ method }}" action="{{ post }}">
+    <fieldset>
+        <legend><h2>Send Message</h2></legend>
+        <br />
+        <label for="phone"> Phone Number: </label>
+        <input id="phone" name="phone" type="text" value="{{ initial_input_box_value }}" size="30" maxlength="50">
+        <br><br>
+        <label for="textarea"> Message Details: </label>
+        <textarea name="messsage" rows="7" cols="40"> </textarea>
+        <br><br>
+        <input type="submit" value="Submit Message">
+    </fieldset>
+    </form>
+    </div>
+{% endblock %}
